@@ -1,0 +1,32 @@
+<config>
+	<!-- here the servers config -->
+	<servers>
+		<server>
+			<name>192.168.1.6</name>
+			<username>ever</username>
+			<password>4ever</password>
+			<port>22</port>
+		</server>
+		<server>
+			<name>192.168.1.7</name>
+			<username>username2</username>
+			<password>password2</password>
+			<port>80</port>
+		</server>
+	</servers>
+	<!-- here the commands by server -->
+	<commands>
+		<serverComands id="192.168.1.6">
+			<serverName>192.168.1.6</serverName>
+			<command>ls</command>
+			<command>ifconfig</command>
+			<command>uname -a</command>
+		</serverComands>
+
+		<serverComands id="192.168.1.7">
+			<serverName>192.168.1.7</serverName>
+			<command>cd ..</command>
+			<command>uname -a</command>	
+		</serverComands>
+	</commands>
+</config>
